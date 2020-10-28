@@ -1,0 +1,10 @@
+# The action server goal
+float32 position    # The normalized position: 0-open and 1-closed
+float32 speed       # The proportional speed of closing where 1 is max
+---
+# The action server result
+float32 pos_err     # Provide the error in the result
+---
+# The action server feedback
+float32 position    # Provide the current position in the feedback
+float32 pos_err     # Provide the error in the result
